@@ -1,0 +1,34 @@
+\documentclass{tum_report}
+
+
+
+\begin{document}
+
+    \input{tex_files/title_page}
+    \clearpage
+
+    \input{tex_files/abstract} 
+    \clearpage
+
+    \addtocontents{toc}{\protect \thispagestyle{empty}}
+    \tableofcontents
+    \thispagestyle{empty}
+    \clearpage
+
+    \input{tex_files/introduction}
+    \clearpage
+
+    \input{tex_files/midterm1}
+    \clearpage
+
+    \input{tex_files/midterm2}
+    \clearpage
+
+    \input{tex_files/conclusion}
+    \clearpage
+    
+    \phantomsection
+    \addcontentsline{toc}{chapter}{Bibliography}
+    \input{tex_files/bibliography}
+
+\end{document}
