@@ -1,6 +1,8 @@
 \documentclass{tum_report}
 
 
+\bibliographystyle{tex_files/bibliography/styles/iso690} % downloaded from some chech uni
+
 
 \begin{document}
 
@@ -29,6 +31,12 @@
     
     \phantomsection
     \addcontentsline{toc}{chapter}{Bibliography}
-    \input{tex_files/bibliography}
+
+    % you can use either .bib format or .tex. Please, do not use both, comment the one you don't need.
+    \nocite{*} 
+    \bibliography{tex_files/bibliography/bibliography} % .bib
+
+
+    % \input{tex_files/bibliography/bibliography} % simply .tex
 
 \end{document}
