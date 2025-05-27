@@ -72,7 +72,7 @@
 
 \RequirePackage{hyperref}
 
-
+\RequirePackage[numbers]{natbib}
 
 % #####
 % Pass additional options for packages.
@@ -236,6 +236,13 @@
 % Equations and Listings numbering
 \numberwithin{equation}{section}
 \AtBeginDocument{\counterwithin{lstlisting}{section}}
+
+
+% Images formatting and numbering
+
+\numberwithin{figure}{chapter}
+\captionsetup[figure]{labelfont=bf}
+
 
 % Format the title of the chapters.
 \titleformat{\chapter}[block]
